@@ -1,9 +1,15 @@
 body {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+    align-content: center;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
     justify-content: center;
+    justify-items: center;
 }
+
+#logo {
+    margin-bottom: 20px;
+}
+
 #searchbox {
     display: block;
     width: 484px;
