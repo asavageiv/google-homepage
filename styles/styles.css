@@ -11,7 +11,6 @@ body, td, a, p, .h {
 a {
     display: inline-block;
     color: #000;
-    opacity: 0.75;
     text-decoration: none;
 }
 
@@ -19,17 +18,32 @@ a:hover, a:active {
     text-decoration: underline;
 }
 
-header {
-    font-size: 13px;
+header, footer {
+    font-size: 14px;
+}
+
+header a {
+    opacity: 0.75;
 }
 
 #leftnavlinks {
     position: absolute;
-    margin: 24px 0 0 10px;
+    top: 24px;
+    margin: 0 0 0 10px;
 }
 
 #leftnavlinks a {
     padding-left: 15px;
+}
+
+#rightnavlinks {
+    position: absolute;
+    right: 0;
+    top: 24px;
+}
+
+#rightnavlinks a {
+    padding-right: 15px;
 }
 
 main {
@@ -42,7 +56,32 @@ main {
 }
 
 footer {
-    height: 35px;
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    height: 40px;
+    line-height: 40px;
+    min-width: 980px;
+}
+
+footer a {
+    color: #5f6368;
+}
+
+#bottomleftlinks {
+    position: absolute;
+}
+
+#bottomleftlinks a {
+    padding-left: 27px;
+}
+
+#bottomrightlinks {
+    position: absolute;
+    right: 30px;
+}
+
+#bottomrightlinks a {
+    padding-left: 20px;
 }
 
 #logo {
